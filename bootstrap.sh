@@ -12,10 +12,10 @@ sudo apt full-upgrade -y
 sudo apt install -y git vim htop curl wget python3-pip
 
 # 3. Clone your configuration repository (if not already present)
-# CONFIG_DIR="$HOME/pi-setup"
-# if [ ! -d "$CONFIG_DIR" ]; then
-#   git clone https://github.com/hchen243/rpi5-poe-nvme-setup.git "$CONFIG_DIR"
-# fi
+CONFIG_DIR="$HOME/pi-setup" # Change this to your desired config directory
+if [ ! -d "$CONFIG_DIR" ]; then
+  git clone https://github.com/hchen243/rpi5-poe-nvme-setup.git "$CONFIG_DIR"
+fi
 
 # 4. Apply system configuration (examples – customize for your setup)
 # sudo cp "$CONFIG_DIR/etc/your-service.service" /etc/systemd/system/
