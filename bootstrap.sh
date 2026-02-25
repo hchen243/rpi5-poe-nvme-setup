@@ -138,6 +138,6 @@ fi
 
 echo "===================================================="
 echo "All bootstrap steps finished on host: $HOSTNAME"
-printf "Bootstrap complete. Rebooting now in 5 seconds...\n"
-sleep 5
+printf "Bootstrap complete. Rebooting now in 30 seconds...\n"
+sleep 30
 sudo reboot
